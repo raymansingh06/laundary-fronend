@@ -61,8 +61,10 @@ const OrderPage = ()=>{
         <option value="Store">Store Location</option>
         <option value="Phone booth,10th Road">Phone both,10th road</option>
         <option value="Near J-D Hall,11th strit">Near J-D Hall,11th strit</option>
+        <option value="Sindhari ,By pass" >Sindhari ,By pass</option>
+              </select>
+                </th>
         
-        </select></th>
 
  </table>
 
