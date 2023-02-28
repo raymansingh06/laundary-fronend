@@ -55,6 +55,14 @@ const OrderPage = ()=>{
         <th style={{width:"90px"}}>Order Id</th>
     </tr>
     <th style={{width:"150px"}}>Order Date and Time</th>
+    <th style={{width:"140px"}}>
+        Store Location
+        <select className="select" onChange={(e)=>{selecthandler(e)}}>
+        <option value="Store">Store Location</option>
+        <option value="Phone booth,10th Road">Phone both,10th road</option>
+        <option value="Near J-D Hall,11th strit">Near J-D Hall,11th strit</option>
+        
+        </select></th>
 
  </table>
 
