@@ -7,7 +7,7 @@ import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { useState } from "react";
 import Axios from 'axios';
 import load from "../../../Images/load.gif";
-
+const API =  " http://localhost:3001/user-registration"  
 
 const Login = () => {
     const [error, setError] = useState()
@@ -42,7 +42,22 @@ const Login = () => {
     const handleSubmit = (e) => {
         setLoading(true)
         e.preventDefault()
-        Axios.post()
+        Axios.post(API + "/login", {
+            username: data.username,
+            password: data.password
+        })
+            .then((res) => {
+                setLoading(false)
+                setError()
+                // console.log(res.data)
+                localStorage.setItem('token', res.data.Token)
+                localStorage.setItem('username', res.data.Name)
+                localStorage.setItem('address', res.data.Address)
+                navigate('/order')   //orderpage route
+            }).catch((e) => {
+                setLoading(false)
+                setError(JSON.stringify(e.response.data))
+            })
         
     }
 
