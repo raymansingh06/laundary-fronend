@@ -14,7 +14,6 @@ function App() {
           <Route path='/' element={<Login />} />
           <Route path='/register' element={<Registration />}/>
          
-          {/* {<Route path='/forgotpassword' element={<ForgotPassword/>}/> */} */
          
         </Routes>
       </BrowserRouter>
