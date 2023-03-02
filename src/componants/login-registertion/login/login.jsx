@@ -7,7 +7,7 @@ import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { useState } from "react";
 import Axios from 'axios';
 import load from "../../../Images/load.gif";
-const API =  " http://localhost:3001/user-registration"
+const API =  " http://localhost:3001/user-registration"  
 
 const Login = () => {
     const [error, setError] = useState()
