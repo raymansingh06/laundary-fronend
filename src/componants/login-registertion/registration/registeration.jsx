@@ -8,9 +8,7 @@ import { useNavigate } from "react-router-dom";
 import tick from "../../../Images/tick.png";
 import Axios from 'axios';
 import load from "../../../Images/load.gif"
-
-
-
+const API =" http://localhost:3001/user-registration"
 
 const Registration = () => {
     const [error, setError] = useState();
@@ -54,7 +52,26 @@ const Registration = () => {
     const handleSubmit = (e) => {
         setLoading(true)
         e.preventDefault()
-        Axios.post()
+        Axios.post(API + "/register", {
+            name: data.name,
+            email: data.email,
+            phone: data.phone,
+            state: data.state,
+            district: data.district,
+            address: data.address,
+            pincode: data.pincode,
+            password: data.password
+        })
+            .then(res => {
+                setError()
+                setLoading(false);
+                setPopup(true);
+                
+            }).catch((e) => {
+                setLoading(false)
+                setError(JSON.stringify(e.response.data))
+            })
+
 
     }
     return ( 
