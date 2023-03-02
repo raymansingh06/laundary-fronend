@@ -1,23 +1,23 @@
-import React from 'react';
+// import React from 'react';
 
-const OrderNavBar = () => {
+// const OrderNavBar = () => {
 
-}
-return (
-    <>
+// }
+// return (
+//     <>
 
 
-        <h3>LAUNDRY</h3>
-        <button>PRICING</button>
-        <button>CAREER</button>
-        <div className="dropdown">
-            <button className="dropbtn"></button>
-            <div>
-                <button>LOGOUT</button>
-            </div>
-        </div>
+//         <h3>LAUNDRY</h3>
+//         <button>PRICING</button>
+//         <button>CAREER</button>
+//         <div className="dropdown">
+//             <button className="dropbtn"></button>
+//             <div>
+//                 <button>LOGOUT</button>
+//             </div>
+//         </div>
 
-    </>
-)
+//     </>
+// )
 
-export default OrderNavBar;
+// export default OrderNavBar;

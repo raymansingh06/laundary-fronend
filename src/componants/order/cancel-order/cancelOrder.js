@@ -18,7 +18,7 @@ This props value will get from main page only which containing all details which
 
     const cancelOrder = async () =>{
 //This will used to retrive the token value from browsers,that stored in localstorage when user will logs into authenticatin
-        const token = localStorage.getItem("token");
+        const token = localStorage.getItem("token");// local storage is allo
       // here we are using fetch method to send put request by syntaxing base url+endpoint+id whcih ever we will get
         await fetch(`${API}/updateorder/${props.orderId}`,{
             method: "PUT",
@@ -26,13 +26,15 @@ This props value will get from main page only which containing all details which
                 Authorization: token
             }
         })
+        //this line used to avoid the confirmation
         props.setCancelDisplay("none");
      
         const tempOrders = props.ordersDetail.map((data)=>{
+            //data._id is uderdata id and props.orderid which user will used to cancel
             if(data._id == props.orderId){
                 data.status = 'Cancelled'
             }
-            return data
+            return data// it will return data
         })
         //if the request is successful , the function updates the order status in props.orderDetails as "cancelled" it will
         // set as what ever status we getting as Cancelled 
@@ -42,7 +44,7 @@ This props value will get from main page only which containing all details which
     
     return (
         <>
-            <section style={{display: props.display}}>
+            <section>
                 <div className="cancel-order-container">
                     <div className="cancel-header">
                         <p className="alert-window">Alert</p>
