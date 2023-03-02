@@ -1,4 +1,4 @@
-import React from 'react';
+/*import React from 'react';
 
 const OrderNavBar = () => {
 
@@ -18,6 +18,6 @@ return (
         </div>
 
     </>
-)
+)*/
 
-export default OrderNavBar;
+//export default OrderNavBar;
