@@ -6,7 +6,7 @@ import CancelOrder from "./cancel-order/cancelOrder";
 import FooterOrder from "./footer/footer";
 import {Link, useNavigate} from "react-router-dom";
 import Summary from "./summary-cancel/summary-cancel";
-const API =  "http://localhost:3001/user-order"
+const API =  "https://laundrycart-backend-0hrp.onrender.com"
 
 const OrderMain = () => {
     const navigate = useNavigate()

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Axios from "axios";
 import "./cancelOrder.css"
-const API =  "http://localhost:3001/user-order"
+const API =  "https://laundrycart-backend-0hrp.onrender.com"
 
 const CancelOrder = (props) => {
     // it will give orderid,
