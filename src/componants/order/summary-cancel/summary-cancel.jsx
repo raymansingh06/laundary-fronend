@@ -27,19 +27,31 @@ export default function Summary(props) {
       
       <div className="store_addrs">
         <select>
+<<<<<<< HEAD
           <option>Jp Nagar</option>
+=======
+          <option>K.R Puram</option>
+>>>>>>> 098eaedba03d2e0523d81170f73b3d16e83f2a92
         </select>
         <dl>
           <dt>
             <b>Store Address:</b>
           </dt>
+<<<<<<< HEAD
           <dd>Near Phone booth, 10th road</dd>
+=======
+          <dd>Near Bakery Circle, 8th road</dd>
+>>>>>>> 098eaedba03d2e0523d81170f73b3d16e83f2a92
         </dl>
         <dl>
           <dt>
             <b>Phone:</b>
           </dt>
+<<<<<<< HEAD
           <dd>91 9999999999</dd>
+=======
+          <dd>91 9876543210</dd>
+>>>>>>> 098eaedba03d2e0523d81170f73b3d16e83f2a92
         </dl>
       </div>
       <div className="order_details">
@@ -69,7 +81,11 @@ export default function Summary(props) {
             </address>
             <address>
                 <p><b>Other</b></p>
+<<<<<<< HEAD
                 <p>#223, 10th road, Jp Nagar, Bangalore</p>
+=======
+                <p>#289, 2nd road, K.R Puram , Bangalore</p>
+>>>>>>> 098eaedba03d2e0523d81170f73b3d16e83f2a92
             </address>
             <button className="address_btn">
             ADD NEW
