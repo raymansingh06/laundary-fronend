@@ -10,7 +10,7 @@ import { useState } from "react";
 import Axios from 'axios';
 import load from "../../../Images/load.gif";
 import tick from "../../../Images/tick.png";
-const API =  "http://localhost:3001/user-signin"
+const API =  "https://laundrycart-backend-0hrp.onrender.com"
 
 const ForgotPassword = () => {
     const [error, setError] = useState()

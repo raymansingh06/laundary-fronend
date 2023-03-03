@@ -189,7 +189,7 @@ export default function CreateOrder(){
     const [productData,productDispatcher] = useReducer(productReducer,[]);
     // console.log(productData);
     useEffect(()=>{
-        const url = "http://localhost:3001/user-order" +"/product";
+        const url = "https://laundrycart-backend-0hrp.onrender.com" +"/product";
          async function FCall(){
            try{
               const response = await axios(url,{
@@ -227,7 +227,7 @@ export default function CreateOrder(){
         </div>
         { productData.length !== 0 && productData.map(data=>{
                 
-                return < Orders 
+                return < Orders
                 key ={data.id} 
                 data = {data} 
                 productDispatcher={productDispatcher}

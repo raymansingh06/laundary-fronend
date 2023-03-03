@@ -123,7 +123,7 @@ export default function Summary(props){
                 // console.log(completeData);
                 async function postCall() {
                   try {
-                    let url = "http://localhost:3001/user-order" + "/createorder";
+                    let url = "https://laundrycart-backend-0hrp.onrender.com" + "/createorder";
                     await axios(url, {
                       method: "post",
                       data: completeData,
