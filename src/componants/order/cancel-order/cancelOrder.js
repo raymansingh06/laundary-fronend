@@ -1,7 +1,7 @@
 import React from "react";
 import React, { useState } from "react";
 import "./cancelOrder.css"
-const API = "BApi";
+const API = "burl";
 
 const CancelOrder = (props) => {
 
@@ -11,12 +11,15 @@ This props value will get from main page only which containing all details which
     from main page will get values
     it will give orderid,
     order details 
+
+
     
-    <CancelOrder display={cancelDisplay}  setCancelDisplay={setCancelDisplay} orderId={orderId} ordersDetail={ordersDetail} setOrderDetail={setOrderDetail} />
+ <CancelOrder display={cancelDisplay}  setCancelDisplay={setCancelDisplay} orderId={orderId} ordersDetail={ordersDetail} setOrderDetail={setOrderDetail} />
    */
 
 
-    const cancelOrder = async () =>{
+
+  const cancelOrder = async () =>{
 //This will used to retrive the token value from browsers,that stored in localstorage when user will logs into authenticatin
         const token = localStorage.getItem("token");// local storage is allo
       // here we are using fetch method to send put request by syntaxing base url+endpoint+id whcih ever we will get
@@ -26,7 +29,7 @@ This props value will get from main page only which containing all details which
                 Authorization: token
             }
         })
-        //this line used to avoid the confirmation
+        //this line used to avoid the confirmation after
         props.setCancelDisplay("none");
      
         const tempOrders = props.ordersDetail.map((data)=>{
