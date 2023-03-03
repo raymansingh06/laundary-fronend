@@ -1,6 +1,5 @@
 import "./orders.css"
 
-
 export default function Orders(props){
     const {data,productDispatcher} = props;
     return<div className="order_container">

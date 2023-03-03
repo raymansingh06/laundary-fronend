@@ -189,7 +189,7 @@ export default function CreateOrder(){
     const [productData,productDispatcher] = useReducer(productReducer,[]);
     // console.log(productData);
     useEffect(()=>{
-        const url = process.env.REACT_APP_API +"/product";
+        const url = "http://localhost:3001/user-order" +"/product";
          async function FCall(){
            try{
               const response = await axios(url,{
@@ -227,7 +227,7 @@ export default function CreateOrder(){
         </div>
         { productData.length !== 0 && productData.map(data=>{
                 
-                return <Orders 
+                return < Orders 
                 key ={data.id} 
                 data = {data} 
                 productDispatcher={productDispatcher}
