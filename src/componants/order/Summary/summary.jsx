@@ -109,7 +109,7 @@ export default function Summary(props){
             </div>
           </div>
           {error && (
-            <span className="summary_error">
+            <span  className="summary_error">
               Please select store and address
             </span>
           )}
@@ -123,7 +123,7 @@ export default function Summary(props){
                 // console.log(completeData);
                 async function postCall() {
                   try {
-                    let url = "https://laundrycart-backend-0hrp.onrender.com" + "/createorder";
+                    let url = process.env.REACT_APP_API + "/createorder";
                     await axios(url, {
                       method: "post",
                       data: completeData,
@@ -141,6 +141,7 @@ export default function Summary(props){
           >
             Confirm
           </button>
+          <p id="ptag"></p>
         </div>
       </div>
     );

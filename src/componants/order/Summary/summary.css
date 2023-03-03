@@ -4,10 +4,12 @@
 /* -------summary_holder------ */
 #summary_holder{
     width: 98.9vw;
-    min-height: 100vh;
+    min-height: 70vh;
     position: fixed;
     top:0;
     background-color: rgba(0, 0, 0, 0.315);
+    overflow-y:scroll;
+
 }
 
 /* --------Summary_page------- */
@@ -195,8 +197,7 @@
 
 .summary_confirm{
     position: relative;
-    top:45%;
-    float: right;
+    top: 40%;
     margin-right: 15px;
     color: white;
     background-color: #5861AE;
@@ -214,4 +215,9 @@
 
 .summary_confirm:active{
     transform: translateY(5px);
+}
+#ptag{
+    position: relative;
+    top:45%;
+    float: right;
 }
