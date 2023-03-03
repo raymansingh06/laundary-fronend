@@ -1,5 +1,6 @@
-
 import React from "react";
+import "../../footers/footer.css"
+
 const FooterOrder = () => {
     return (
         <>

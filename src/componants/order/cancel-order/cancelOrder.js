@@ -1,53 +1,38 @@
-import React from "react";
 import React, { useState } from "react";
+import Axios from "axios";
 import "./cancelOrder.css"
-const API = "burl";
+const API = process.env.REACT_APP_API || "https://laundrycart-api.onrender.com"
 
 const CancelOrder = (props) => {
+    // it will give orderid,
+    /// order details 
+    //
+    //<CancelOrder display={cancelDisplay}  setCancelDisplay={setCancelDisplay} orderId={orderId} ordersDetail={ordersDetail} setOrderDetail={setOrderDetail} />
 
-   /*
-   This cancel function is responsible for handling ths users decion to cancel order
-This props value will get from main page only which containing all details which stored,canceloredrcode,
-    from main page will get values
-    it will give orderid,
-    order details 
-
-
-    
- <CancelOrder display={cancelDisplay}  setCancelDisplay={setCancelDisplay} orderId={orderId} ordersDetail={ordersDetail} setOrderDetail={setOrderDetail} />
-   */
-
-
-
-  const cancelOrder = async () =>{
-//This will used to retrive the token value from browsers,that stored in localstorage when user will logs into authenticatin
-        const token = localStorage.getItem("token");// local storage is allo
-      // here we are using fetch method to send put request by syntaxing base url+endpoint+id whcih ever we will get
+    const cancelOrder = async () =>{
+        const token = localStorage.getItem("token");
+        console.log("calllll")
         await fetch(`${API}/updateorder/${props.orderId}`,{
             method: "PUT",
             headers : {
                 Authorization: token
             }
         })
-        //this line used to avoid the confirmation after
         props.setCancelDisplay("none");
      
         const tempOrders = props.ordersDetail.map((data)=>{
-            //data._id is uderdata id and props.orderid which user will used to cancel
             if(data._id == props.orderId){
                 data.status = 'Cancelled'
             }
-            return data// it will return data
+            return data
         })
-        //if the request is successful , the function updates the order status in props.orderDetails as "cancelled" it will
-        // set as what ever status we getting as Cancelled 
         props.setOrderDetail(tempOrders)
-        
+        console.log(props.ordersDetail)
     }
     
     return (
         <>
-            <section>
+            <section style={{display: props.display}}>
                 <div className="cancel-order-container">
                     <div className="cancel-header">
                         <p className="alert-window">Alert</p>
