@@ -7,7 +7,7 @@ import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { useState } from "react";
 import Axios from 'axios';
 import load from "../../../Images/load.gif";
-const API =  "https://laundrycart-backend-0hrp.onrender.com" 
+const API = process.env.REACT_APP_API || "https://laundrycartbackend-xgdi.onrender.com"
 
 const Login = () => {
     const [error, setError] = useState()

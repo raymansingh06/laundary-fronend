@@ -8,8 +8,7 @@ import { useNavigate } from "react-router-dom";
 import tick from "../../../Images/tick.png";
 import Axios from 'axios';
 import load from "../../../Images/load.gif"
-const API ="https://laundrycart-backend-0hrp.onrender.com"
-
+const API = process.env.REACT_APP_API || "https://laundrycartbackend-xgdi.onrender.com"
 const Registration = () => {
     const [error, setError] = useState();
     const [popup , setPopup] = useState(false)
