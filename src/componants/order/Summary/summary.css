@@ -4,20 +4,11 @@
 /* -------summary_holder------ */
 #summary_holder{
     width: 98.9vw;
-<<<<<<< HEAD
-    min-height: 100vh;
-    position: fixed;
-    top:0;
-    background-color: rgba(0, 0, 0, 0.315);
-=======
     min-height: 70vh;
     position: fixed;
     top:0;
     background-color: rgba(0, 0, 0, 0.315);
-    overflow-y:scroll;
-
->>>>>>> 098eaedba03d2e0523d81170f73b3d16e83f2a92
-}
+    overflow-y:scroll;}
 
 /* --------Summary_page------- */
 
@@ -204,12 +195,7 @@
 
 .summary_confirm{
     position: relative;
-<<<<<<< HEAD
-    top:45%;
-    float: right;
-=======
     top: 40%;
->>>>>>> 098eaedba03d2e0523d81170f73b3d16e83f2a92
     margin-right: 15px;
     color: white;
     background-color: #5861AE;
@@ -227,13 +213,15 @@
 
 .summary_confirm:active{
     transform: translateY(5px);
-<<<<<<< HEAD
+
 }
-=======
+
 }
 #ptag{
     position: relative;
     top:45%;
     float: right;
 }
->>>>>>> 098eaedba03d2e0523d81170f73b3d16e83f2a92
+
+     
+
