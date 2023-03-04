@@ -40,7 +40,7 @@ export default function Orders(props){
             onClick={()=>{
                 productDispatcher({type:"fold",payload:{id:data.id,price:data.washing_types.fold.price}})
             }}
-            />
+            />  
             <img 
             src={`./images/icon-for-createorder/bleach${data.washing_types.pack.status ? "-blue" : ""}.svg` } 
             alt="pack"
