@@ -75,7 +75,7 @@ export default function Summary(props) {
             <address>
                 <p><b>Other</b></p>
 
-                <p>#289, 2nd road, K.R Puram , Bangalore</p>
+                <p>#89, VijayaNagar,Mysore</p>
 
             </address>
             <button className="address_btn">
