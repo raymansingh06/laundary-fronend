@@ -9,8 +9,6 @@ import CreateOrder from "./componants/order/CreateOrder/CreateOrder";
 import ForgotPassword from './componants/login-registertion/forgotPassword/forgotpwd';
 
 
-
-
 function App() {
   return (
     <div>
