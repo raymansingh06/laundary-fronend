@@ -15,7 +15,7 @@ const CancelOrder = (props) => {
             headers : {
                 Authorization: token
             }
-        })
+        })    
         props.setCancelDisplay("none");
      
         const tempOrders = props.ordersDetail.map((data)=>{

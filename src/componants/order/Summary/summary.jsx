@@ -34,13 +34,13 @@ export default function Summary(props){
           <div className="store_addrs">
             <select onChange={handleStoreSelect}>
               <option>-</option>
-              <option></option>
+              <option>K.R Puram</option>
             </select>
             <dl>
               <dt>
                 <b>Store Address:</b>
               </dt>
-              <dd>{storeSelect ? "Near Phone booth, 10th road" : "-"}</dd>
+              <dd>{storeSelect ? "Near Bakery, 8th cross, school road" : "-"}</dd>
             </dl>
             <dl>
               <dt>
@@ -64,7 +64,7 @@ export default function Summary(props){
                     <p className="single_total">
                       {Number(data.quantity) * Number(data.price)}
                     </p>
-                  </div>
+                  </div>   
                 );
               })}
             </div>
@@ -103,11 +103,12 @@ export default function Summary(props){
                 <p>
                   <b>Other</b>
                 </p>
-                <p>#223, 10th road, Jp Nagar, Bangalore</p>
+                <p>#223, 10th road, K R PURAM, Bangalore</p>
               </address>
               <button className="address_btn">ADD NEW</button>
             </div>
           </div>
+        
           {error && (
             <span  className="summary_error">
               Please select store and address
@@ -141,9 +142,10 @@ export default function Summary(props){
           >
             Confirm
           </button>
+          </div>
           <p id="ptag"></p>
         </div>
-      </div>
+    
     );
 }
 Footer

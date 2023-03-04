@@ -57,7 +57,7 @@ export default function Orders(props){
                 productDispatcher({type:"reset",payload:{id:data.id}})
             }} >Reset</button> 
             :
-            ""}
+            ""}   
 
         </div>
     </div>

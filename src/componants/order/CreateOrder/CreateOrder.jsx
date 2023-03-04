@@ -9,7 +9,7 @@ import Summary from "../Summary/summary";
 import SuccessOrder from "./SuccessOrder/SuccessOrder";
 import { useReducer } from "react";
 import FooterOrder from "../footer/footer";
-
+  
 export default function CreateOrder(){
   
     const navigate = useNavigate();

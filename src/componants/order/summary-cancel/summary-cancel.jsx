@@ -14,7 +14,7 @@ export default function Summary(props) {
     props.setSummaryDisplay("none")
     setCancelDisplay("block");
   }    
-  
+    
 
   return(
     <>

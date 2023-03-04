@@ -12,4 +12,4 @@ export default function SuccessOrder(props){
             <button onClick={()=>navigate("/order")} >Go to Orders</button>
         </div>
     </div>
-} 
+}   

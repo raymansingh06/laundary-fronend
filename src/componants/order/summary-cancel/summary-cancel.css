@@ -8,7 +8,9 @@
     position: fixed;
     top:0;
     background-color: rgba(0, 0, 0, 0.315);
-    overflow-y:scroll;}
+    overflow-y:scroll;
+
+}
 
 /* --------Summary_page------- */
 
@@ -213,13 +215,9 @@
 
 .summary_confirm:active{
     transform: translateY(5px);
-
 }
-
-
 #ptag{
     position: relative;
     top:45%;
     float: right;
 }
-     

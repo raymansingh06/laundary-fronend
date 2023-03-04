@@ -34,7 +34,7 @@ const OrderNavBar = () => {
             </nav>
         </>
     )
-}
+}  
 export default OrderNavBar;
 
-  
+    
