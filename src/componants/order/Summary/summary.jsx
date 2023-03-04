@@ -109,11 +109,7 @@ export default function Summary(props){
             </div>
           </div>
           {error && (
-<<<<<<< HEAD
-            <span className="summary_error">
-=======
             <span  className="summary_error">
->>>>>>> 098eaedba03d2e0523d81170f73b3d16e83f2a92
               Please select store and address
             </span>
           )}
@@ -145,11 +141,14 @@ export default function Summary(props){
           >
             Confirm
           </button>
-<<<<<<< HEAD
-=======
           <p id="ptag"></p>
->>>>>>> 098eaedba03d2e0523d81170f73b3d16e83f2a92
         </div>
       </div>
     );
 }
+Footer
+
+
+
+
+
