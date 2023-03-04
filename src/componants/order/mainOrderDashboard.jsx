@@ -111,9 +111,9 @@ const OrderMain = () => {
                                     <tr className="table-body" key={i}>
                                         <td>{data._id}</td>
                                         <td>{data.createdAt}</td>
-                                        <td>Jodhpur</td>
-                                        <td>Rajasthan</td>
-                                        <td>9636579036</td>
+                                        <td>K.R Puramr</td>
+                                        <td>Banglore</td>
+                                        <td>9874563210</td>
                                         <td>{data.orders.length}</td>
                                         <td>{data.total_price} </td>
                                         <td style={{color: data.status === "Cancelled" ? "red" : "black"}}>{data.status}</td>
