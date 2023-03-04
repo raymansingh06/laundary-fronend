@@ -6,7 +6,6 @@ const API = process.env.REACT_APP_API || "https://laundrycartbackend-xgdi.onrend
 const CancelOrder = (props) => {
     // it will give orderid,
     /// order details 
-    //
     //<CancelOrder display={cancelDisplay}  setCancelDisplay={setCancelDisplay} orderId={orderId} ordersDetail={ordersDetail} setOrderDetail={setOrderDetail} />
 
     const cancelOrder = async () =>{

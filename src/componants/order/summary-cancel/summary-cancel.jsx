@@ -13,7 +13,7 @@ export default function Summary(props) {
   const call = () => {
     props.setSummaryDisplay("none")
     setCancelDisplay("block");
-  }
+  }    
   
 
   return(

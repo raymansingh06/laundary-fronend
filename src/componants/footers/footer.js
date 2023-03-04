@@ -6,6 +6,7 @@ import { FaFacebookSquare, FaInstagram, FaLinkedin } from 'react-icons/fa'
 const FooterLogin = () => {
    return (
       <>
+      
          <footer className="foot-container">
             <div className="footer-1">Now Refer & Earn ₹500 for every referral*</div>
             <div className="footer-2">*Terms and Conditions Applied.</div>

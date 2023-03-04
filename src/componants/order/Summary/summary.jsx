@@ -12,7 +12,7 @@ export default function Summary(props){
     const handletick = ()=>{
         click?setClick(false):setClick(true)
     }
-
+ 
     function handleStoreSelect(e){
         if(e.target.value === "-"){
             setstoreSelect(false);
@@ -34,7 +34,7 @@ export default function Summary(props){
           <div className="store_addrs">
             <select onChange={handleStoreSelect}>
               <option>-</option>
-              <option>Jp Nagar</option>
+              <option></option>
             </select>
             <dl>
               <dt>
