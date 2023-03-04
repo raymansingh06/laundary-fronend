@@ -204,6 +204,7 @@
     border: 0;
     border-radius: 5px;
     clear: both;
+    float: right;
 }
 
 .summary_confirm:hover{
