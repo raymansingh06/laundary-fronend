@@ -124,7 +124,7 @@ export default function Summary(props){
                 // console.log(completeData);
                 async function postCall() {
                   try {
-                    let url = process.env.REACT_APP_API + "/createorder";
+                    let url ="https://laudry-cart.onrender.com" + "/createorder";
                     await axios(url, {
                       method: "post",
                       data: completeData,
