@@ -10,7 +10,7 @@ import { useState } from "react";
 import Axios from 'axios';
 import load from "../../../Images/load.gif";
 import tick from "../../../Images/tick.png";
-const API = process.env.REACT_APP_API || "https://laundrycartbackend-xgdi.onrender.com"
+const API = process.env.REACT_APP_API || "https://laudry-cart-2.onrender.com"
            
 const ForgotPassword = () => {
     const [error, setError] = useState()

@@ -8,8 +8,8 @@ export default function Summary(props) {
   const [cancelDisplay, setCancelDisplay] = useState("none");
   const dataDetail = props.summaryData;
   const orders = dataDetail.orders;
-  console.log(orders);
-
+ 
+ 
   const call = () => {
     props.setSummaryDisplay("none")
     setCancelDisplay("block");
