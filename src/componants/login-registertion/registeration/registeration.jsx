@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 import tick from "../../../Images/tick.png";
 import Axios from 'axios';
 import load from "../../../Images/load.gif"
-const API = process.env.REACT_APP_API || "https://laudry-cart.onrender.com"
+const API = process.env.REACT_APP_API || "https://backend-laundary-final.onrender.com"
      
 const Registration = () => {
     const [error, setError] = useState();
