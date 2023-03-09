@@ -6,7 +6,7 @@ import CancelOrder from "./cancel-order/cancelOrder";
 import FooterOrder from "./footer/footer";
 import {Link, useNavigate} from "react-router-dom";
 import Summary from "./summary-cancel/summary-cancel";
-const API = process.env.REACT_APP_API || "https://laudry-cart.onrender.com"
+const API = process.env.REACT_APP_API || "https://backend-laundary-final.onrender.com"
 
 const OrderMain = () => {
     const navigate = useNavigate()
